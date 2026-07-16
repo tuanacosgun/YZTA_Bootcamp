@@ -68,6 +68,68 @@ Alınan kararlar: Ekip içi iş bölümü netleştirilmiş ve uygulamanın temel
 
 # Sprint 2
 
+- **Sprint Notları**: 
+Sprint 2 sürecinde projenin temel geliştirme aşamasına geçilmesi hedeflenmiştir. Sprint 1’de belirlenen ürün fikri, hedef kitle, kullanıcı problemi ve MVP kapsamı doğrultusunda bu sprintte frontend geliştirme sürecine başlanmış; avatar, dijital gardırop, ürün görseli/link analizi ve yapay zeka destekli kombin önerisi özellikleri için teknik araştırmalara devam edilmiştir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 
+Sprint 2 için toplam tahmini puan: 50 puan
+
+Puan dağılımı; frontend başlangıcı, kullanıcı profil ekranı, avatar araştırması, gardırop veri yapısı, ürün görseli/link analizi araştırması, AI kombin önerisi araştırması ve sprint dokümantasyonu başlıklarına göre yapılmıştır.
+
+- **Puan tamamlama mantığı**: 
+Sprint 2’de amaç tüm ürün fonksiyonlarını eksiksiz tamamlamak değil; ürünün çalışır MVP’ye dönüşebilmesi için gerekli temel arayüz, teknik araştırma ve veri yapısı kararlarını oluşturmaktır.
+
+Bu nedenle Sprint 2 puanları üç ana başlık altında değerlendirilmiştir:
+
+1. **Geliştirme işleri**  
+   Frontend proje başlangıcı, ana sayfa, dashboard yapısı ve kullanıcı profil ekranı gibi somut ürün çıktıları.
+
+2. **Araştırma ve teknik karar işleri**  
+   Avatar oluşturma, virtual try-on, ürün görseli/link analizi ve AI kombin önerisi için uygulanabilir yöntemlerin araştırılması.
+
+3. **Proje yönetimi işleri**  
+   Sprint board güncellemeleri, daily scrum notları, backlog güncellemesi ve README dokümantasyonu.
+
+  - **Backlog düzeni ve Story seçimleri**: 
+Sprint 2 backlog’u, Sprint 1 sonunda belirlenen MVP hedeflerine göre yeniden düzenlenmiştir. İlk planlanan ürün kapsamı geniş olduğu için, bu sprintte öncelik son sprintte demo edilebilir bir ürün çıkarabilmeye yönelik temel işlere verilmiştir.
+
+Story’ler yapılacak işlere/task’lere bölünmüştür. Backlog’da özellikle frontend geliştirme, kullanıcı profili, avatar yaklaşımı, dijital gardırop, ürün ekleme ve AI kombin önerisi başlıkları ayrı ayrı ele alınmıştır.
+
+Sprint 2 için seçilen başlıca user story’ler:
+
+| User Story | Açıklama | Öncelik | Tahmini Puan | Durum |
+| --- | --- | --- | --- | --- |
+| US-8 | Kullanıcı olarak uygulamanın ana sayfasını görerek ürünün amacını anlayabilmek istiyorum. | High | 5 | Devam Ediyor |
+| US-9 | Kullanıcı olarak profil bilgilerimi girebileceğim bir form ekranı görmek istiyorum. | High | 5 | Planlandı |
+| US-10 | Kullanıcı olarak vücut ölçülerimi girerek avatar oluşturma sürecini başlatmak istiyorum. | High | 8 | Araştırma Aşamasında |
+| US-11 | Kullanıcı olarak gardırobuma kıyafet ekleyebilmek istiyorum. | High | 8 | Planlandı |
+| US-12 | Kullanıcı olarak eklediğim kıyafetleri kategori bazlı görebilmek istiyorum. | Medium | 5 | Planlandı |
+| US-13 | Kullanıcı olarak bir kıyafet görseli veya ürün linki ekleyebilmek istiyorum. | Medium | 8 | Araştırma Aşamasında |
+| US-14 | Kullanıcı olarak yapay zekadan kombin önerisi alabilmek istiyorum. | Medium | 8 | Araştırma Aşamasında |
+| US-15 | Takım olarak ürünün teknik mimarisini netleştirmek istiyoruz. | High | 3 | Devam Ediyor |
+
+Sprint 2 için seçilen backlog item’ları:
+
+| Backlog Item | Açıklama | Durum |
+| --- | --- | --- |
+| Frontend proje başlangıcı | Uygulamanın web arayüzü için temel proje yapısına başlanması | Devam Ediyor |
+| Ana sayfa / landing page tasarımı | Kullanıcıya ürünün amacını anlatan ilk ekranın hazırlanması | Devam Ediyor |
+| Dashboard yapısının planlanması | Kullanıcının avatar, gardırop ve kombin alanlarına ulaşacağı temel panelin tasarlanması | Planlandı |
+| Profil formu alanlarının belirlenmesi | Boy, kilo, beden ve vücut ölçüsü alanlarının netleştirilmesi | Devam Ediyor |
+| Avatar oluşturma yöntem araştırması | 3D avatar, placeholder avatar veya ölçülere dayalı temsil seçeneklerinin incelenmesi | Devam Ediyor |
+| Gardırop veri yapısının belirlenmesi | Kıyafet adı, kategori, renk, görsel ve kaynak bilgisi gibi alanların çıkarılması | Devam Ediyor |
+| Ürün linki / görsel analizi araştırması | Kullanıcının internetten ürün ekleyebilmesi için uygulanabilir yöntemlerin araştırılması | Devam Ediyor |
+| AI kombin önerisi yaklaşımı | Kural tabanlı öneri, LLM destekli öneri veya hibrit yapı seçeneklerinin değerlendirilmesi | Devam Ediyor |
+
+- **Daily Scrum**: 
+Daily Scrum toplantılarının takım üyelerinin uygunluk durumuna göre çevrimiçi mesajlaşma kanalı üzerinden yapılmasına devam edilmiştir. Sprint 2’de takım henüz geliştirme sürecine tam hızda başlayamadığı için Daily Scrum notlarında özellikle frontend başlangıcı, araştırma başlıkları, görev paylaşımı ve blocker’lar takip edilmiştir.
+
+Daily Scrum toplantılarında her takım üyesi aşağıdaki üç soruya göre ilerleme paylaşmıştır:
+
+1. Dün ne yaptım?
+2. Bugün ne yapacağım?
+3. Bir engelim/blocker var mı?
+
 
 ---
 
