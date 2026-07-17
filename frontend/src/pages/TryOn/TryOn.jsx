@@ -1,0 +1,1 @@
+// Sanal kıyafet deneme (Virtual Try-On) ekranı.

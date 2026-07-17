@@ -1,0 +1,1 @@
+// Yapay zekâ destekli kombin önerilerinin gösterileceği ekran.
