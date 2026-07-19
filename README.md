@@ -69,26 +69,28 @@ Alınan kararlar: Ekip içi iş bölümü netleştirilmiş ve uygulamanın temel
 # Sprint 2
 
 - **Sprint Notları**: 
-Sprint 2 sürecinde projenin temel geliştirme aşamasına geçilmesi hedeflenmiştir. Sprint 1’de belirlenen ürün fikri, hedef kitle, kullanıcı problemi ve MVP kapsamı doğrultusunda bu sprintte frontend geliştirme sürecine başlanmış; avatar, dijital gardırop, ürün görseli/link analizi ve yapay zeka destekli kombin önerisi özellikleri için teknik araştırmalara devam edilmiştir.
+Sprint 1 sonunda proje kapsamının netleştirilmesi ve teknik araştırmaların yapılmasının ardından Sprint 2'de somut geliştirme sürecine geçilmesi hedeflenmiştir.
+
+Bu sprintte öncelik; uygulamanın frontend altyapısının kurulması, temel kullanıcı akışının oluşturulması, ana sayfa ve uygulama modüllerine ait ekranların geliştirilmesi ve Avatar, Virtual Try-On, Dijital Gardırop ve AI Stil Asistanı gibi temel özelliklerin uygulanabilirliğinin araştırılması olmuştur.
+
+Sprint 2 sonunda React + Vite tabanlı frontend mimarisi oluşturulmuş; Home, Dashboard, Profile, Wardrobe, Try-On ve AI Stylist sayfalarının temel yapıları hazırlanmıştır. Routing ve ortak component yapısı oluşturulmuş, uygulamanın temel kullanıcı akışı frontend tarafında şekillendirilmiştir.
+
+Backend, veritabanı ve gerçek AI model entegrasyonları ise henüz tamamlanmamış olup Sprint 3'te önceliklendirilecek geliştirmeler arasına alınmıştır.
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 
-Sprint 2 için toplam tahmini puan: 50 puan
+Sprint 2 için toplam **50 story point** tamamlanması hedeflenmiştir.
 
-Puan dağılımı; frontend başlangıcı, kullanıcı profil ekranı, avatar araştırması, gardırop veri yapısı, ürün görseli/link analizi araştırması, AI kombin önerisi araştırması ve sprint dokümantasyonu başlıklarına göre yapılmıştır.
+Sprint başında belirlenen user story'ler; frontend geliştirme, kullanıcı profil yapısı, avatar oluşturma, dijital gardırop, ürün analizi, Virtual Try-On ve AI destekli kombin önerisi gibi temel MVP özelliklerini kapsamaktadır.
+
+Sprint sonunda tamamlanamayan veya yalnızca araştırma/prototip seviyesinde kalan işler bir sonraki sprint backlog'una aktarılmıştır.
 
 - **Puan tamamlama mantığı**: 
-Sprint 2’de amaç tüm ürün fonksiyonlarını eksiksiz tamamlamak değil; ürünün çalışır MVP’ye dönüşebilmesi için gerekli temel arayüz, teknik araştırma ve veri yapısı kararlarını oluşturmaktır.
+Story point tahminleri yapılırken görevlerin teknik zorluğu, geliştirme süresi, araştırma ihtiyacı ve diğer modüllere olan bağımlılıkları dikkate alınmıştır.
 
-Bu nedenle Sprint 2 puanları üç ana başlık altında değerlendirilmiştir:
+Frontend ekranlarının oluşturulması gibi kapsamı daha net olan işler daha düşük veya orta seviyede puanlanırken; Avatar oluşturma, Virtual Try-On ve AI tabanlı öneri sistemi gibi teknik araştırma ve model entegrasyonu gerektiren işler daha yüksek puanlarla değerlendirilmiştir.
 
-1. **Geliştirme işleri**  
-   Frontend proje başlangıcı, ana sayfa, dashboard yapısı ve kullanıcı profil ekranı gibi somut ürün çıktıları.
+Bir user story yalnızca ilgili kabul kriterlerinin tamamlanması durumunda tamamlanmış kabul edilmiştir. Frontend arayüzü oluşturulmuş ancak backend veya AI entegrasyonu tamamlanmamış özellikler "Devam Ediyor" veya "Araştırma Aşamasında" olarak değerlendirilmiştir.
 
-2. **Araştırma ve teknik karar işleri**  
-   Avatar oluşturma, virtual try-on, ürün görseli/link analizi ve AI kombin önerisi için uygulanabilir yöntemlerin araştırılması.
-
-3. **Proje yönetimi işleri**  
-   Sprint board güncellemeleri, daily scrum notları, backlog güncellemesi ve README dokümantasyonu.
 
   - **Backlog düzeni ve Story seçimleri**: 
 Sprint 2 backlog’u, Sprint 1 sonunda belirlenen MVP hedeflerine göre yeniden düzenlenmiştir. İlk planlanan ürün kapsamı geniş olduğu için, bu sprintte öncelik son sprintte demo edilebilir bir ürün çıkarabilmeye yönelik temel işlere verilmiştir.
@@ -122,14 +124,61 @@ Sprint 2 için seçilen backlog item’ları:
 | AI kombin önerisi yaklaşımı | Kural tabanlı öneri, LLM destekli öneri veya hibrit yapı seçeneklerinin değerlendirilmesi | Devam Ediyor |
 
 - **Daily Scrum**: 
-Daily Scrum toplantılarının takım üyelerinin uygunluk durumuna göre çevrimiçi mesajlaşma kanalı üzerinden yapılmasına devam edilmiştir. Sprint 2’de takım henüz geliştirme sürecine tam hızda başlayamadığı için Daily Scrum notlarında özellikle frontend başlangıcı, araştırma başlıkları, görev paylaşımı ve blocker’lar takip edilmiştir.
+Takım üyelerinin eğitim, iş ve kişisel programlarının farklı olması nedeniyle Daily Scrum iletişimi çevrim içi mesajlaşma ve düzenli ekip görüşmeleri üzerinden gerçekleştirilmiştir.
 
-Daily Scrum toplantılarında her takım üyesi aşağıdaki üç soruya göre ilerleme paylaşmıştır:
+Daily Scrum sürecinde temel olarak şu konular takip edilmiştir:
 
-1. Dün ne yaptım?
-2. Bugün ne yapacağım?
-3. Bir engelim/blocker var mı?
+- Bir önceki görüşmeden itibaren tamamlanan işler
+- Üzerinde çalışılmakta olan görevler
+- Bir sonraki adımda yapılacak işler
+- Geliştirmeyi engelleyen teknik veya organizasyonel blocker'lar
+- Takım üyeleri arasında yapılması gereken görev devirleri ve koordinasyon
 
+Sprint ilerledikçe frontend geliştirme süreci, AI modellerinin araştırılması ve proje kapsamının MVP'ye uygun şekilde daraltılması ekip içerisinde değerlendirilmiştir.
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Kanban Pano](bootcamp_charts/sprint2_table.png)]
+![Burndown Chart](bootcamp_charts/sprint2_chart.png)]
+
+---
+
+## Ürün Durumu
+
+Sprint 2 sonunda uygulamanın React + Vite tabanlı frontend mimarisi oluşturulmuş ve temel kullanıcı akışı şekillendirilmiştir.
+
+Aşağıdaki temel ekran ve modüllerin frontend yapıları hazırlanmıştır:
+
+- Ana Sayfa / Landing Page
+- Dashboard
+- Kullanıcı Profili
+- Dijital Gardırop
+- Virtual Try-On
+- AI Stil Asistanı
+
+Dashboard üzerinden Avatar, Dijital Gardırop, AI Stil Asistanı ve Virtual Try-On gibi temel modüllere erişim sağlayacak navigasyon yapısı oluşturulmuştur.
+
+Routing ve ortak component yapısının hazırlanmasıyla birlikte frontend daha modüler ve geliştirilebilir bir yapıya taşınmıştır.
+
+Avatar, Virtual Try-On ve AI Stil Asistanı ekranlarının bulunması bu özelliklerin tamamen fonksiyonel olduğu anlamına gelmemektedir. Bu özelliklerin AI modeli, backend ve veri entegrasyonları henüz tamamlanmamış olup bazı bölümler araştırma veya placeholder aşamasındadır.
+
+Sprint 3'te temel hedef; mevcut frontend'i backend ve veri altyapısıyla entegre ederek çalışır bir MVP kullanıcı akışı ortaya çıkarmaktır.
+
+---
+
+## Sprint Review
+
+Sprint 2 sonunda gerçekleştirilen çalışmalar takım tarafından değerlendirilmiştir.
+
+Sprint boyunca Sprint 1'e kıyasla geliştirme tarafında daha somut ilerleme sağlanmış ve uygulamanın frontend temel yapısı oluşturulmuştur. Ana sayfa, dashboard, profil, dijital gardırop ve diğer temel modüller için sayfa yapıları hazırlanarak uygulamanın kullanıcı akışı şekillendirilmeye başlanmıştır.
+
+Sprint Review sonucunda aşağıdaki kararlar alınmıştır:
+
+- Başlangıçta planlanan ürün kapsamının 6 haftalık Bootcamp süresi için oldukça geniş olduğu görülmüştür.
+- Tüm özelliklerin eksiksiz geliştirilmesi yerine, kullanıcıya ürünün temel değer önerisini gösterebilecek çalışan bir MVP oluşturulmasına öncelik verilmesine karar verilmiştir.
+- Avatar oluşturma, Virtual Try-On ve AI tabanlı kombin önerisi teknik açıdan en yüksek efor gerektiren özellikler olarak değerlendirilmiştir.
+- Sprint 3'te backend, veritabanı ve frontend-backend entegrasyonunun öncelikli hale getirilmesine karar verilmiştir.
+- AI tarafında tüm planlanan özellikleri aynı anda geliştirmek yerine, demo değerini ve kullanıcı deneyimini en fazla artıracak özelliklerin önceliklendirilmesi kararlaştırılmıştır.
+- Tamamlanamayan user story ve task'ler Sprint 3 backlog'una aktarılmıştır.
 
 ---
 
