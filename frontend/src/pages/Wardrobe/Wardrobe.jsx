@@ -1,14 +1,108 @@
 // Kullanıcının gardırobuna kıyafet ekleyip kategori bazlı görebildiği ekran.
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import StatusTag from "../../components/StatusTag/StatusTag";
 import "./Wardrobe.css";
+
+import bejTrenchcoat from "../../assets/clothing/bej-trenckot.webp";
+import beyazTisort from "../../assets/clothing/beyaz-oversize-tisort.webp";
+import siyahJean from "../../assets/clothing/siyah-jean.webp";
+import maviMomJean from "../../assets/clothing/mavi-mom-jean.webp";
+import griHoodie from "../../assets/clothing/gri-hoodie.jpg";
+import beyazSneaker from "../../assets/clothing/beyaz-sneaker.jpg";
+import siyahBot from "../../assets/clothing/siyah-bot.jpg";
+import kahverengiCanta from "../../assets/clothing/kahverengi-canta.jpg";
+import siyahDeriCeket from "../../assets/clothing/siyah-deri-ceket.jpg";
+import maviKazak from "../../assets/clothing/mavi-kazak.jpg";
 
 const CATEGORIES = ["Üst Giyim", "Alt Giyim", "Dış Giyim", "Ayakkabı", "Aksesuar"];
 
 function Wardrobe() {
+
+  const navigate = useNavigate();
+
   const [items, setItems] = useState([
-    { id: 1, ad: "Bej Trençkot", kategori: "Dış Giyim", renk: "Bej", kaynak: "" },
-  ]);
+  {
+    id: 1,
+    ad: "Bej Trençkot",
+    kategori: "Dış Giyim",
+    renk: "Bej",
+    kaynak: "",
+    image: bejTrenchcoat,
+  },
+  {
+    id: 2,
+    ad: "Beyaz Oversize Tişört",
+    kategori: "Üst Giyim",
+    renk: "Beyaz",
+    kaynak: "",
+    image: beyazTisort,
+  },
+  {
+    id: 3,
+    ad: "Siyah Jean",
+    kategori: "Alt Giyim",
+    renk: "Siyah",
+    kaynak: "",
+    image: siyahJean,
+  },
+  {
+    id: 4,
+    ad: "Mavi Mom Jean",
+    kategori: "Alt Giyim",
+    renk: "Mavi",
+    kaynak: "",
+    image: maviMomJean,
+  },
+  {
+    id: 5,
+    ad: "Gri Hoodie",
+    kategori: "Üst Giyim",
+    renk: "Gri",
+    kaynak: "",
+    image: griHoodie,
+  },
+  {
+    id: 6,
+    ad: "Beyaz Sneaker",
+    kategori: "Ayakkabı",
+    renk: "Beyaz",
+    kaynak: "",
+    image: beyazSneaker,
+  },
+  {
+    id: 7,
+    ad: "Siyah Bot",
+    kategori: "Ayakkabı",
+    renk: "Siyah",
+    kaynak: "",
+    image: siyahBot,
+  },
+  {
+    id: 8,
+    ad: "Kahverengi Çanta",
+    kategori: "Aksesuar",
+    renk: "Kahverengi",
+    kaynak: "",
+    image: kahverengiCanta,
+  },
+  {
+    id: 9,
+    ad: "Siyah Deri Ceket",
+    kategori: "Dış Giyim",
+    renk: "Siyah",
+    kaynak: "",
+    image: siyahDeriCeket,
+  },
+  {
+    id: 10,
+    ad: "Mavi Kazak",
+    kategori: "Üst Giyim",
+    renk: "Mavi",
+    kaynak: "",
+    image: maviKazak,
+  },
+]);
   const [draft, setDraft] = useState({ ad: "", kategori: CATEGORIES[0], renk: "", kaynak: "" });
   const [open, setOpen] = useState(false);
 
@@ -102,10 +196,39 @@ function Wardrobe() {
             >
               ×
             </button>
-            <div className="font-mono wardrobe-page__category">{it.kategori.toUpperCase()}</div>
+
+            <img
+              src={it.image}
+              alt={it.ad}
+              className="wardrobe-page__image"
+            />
+
+            <div className="font-mono wardrobe-page__category">
+              {it.kategori.toUpperCase()}</div>
+
             <div className="wardrobe-page__name">{it.ad}</div>
-            <div className="wardrobe-page__color">{it.renk || "Renk belirtilmedi"}</div>
+
+            <div className="wardrobe-page__color">
+              {it.renk || "Renk belirtilmedi"}
+              </div>
+
+            <button
+              className="btn-primary wardrobe-page__button"
+              type="button"
+              onClick={() =>
+                navigate("/ai-stylist", {
+                  state: {
+                    clothing: it,
+                  },
+                })
+              }
+            >
+              ✨ Kombin Oluştur
+            </button>
+
           </div>
+
+          
         ))}
         {items.length === 0 && (
           <div className="font-mono wardrobe-page__empty">Gardırobun henüz boş.</div>
