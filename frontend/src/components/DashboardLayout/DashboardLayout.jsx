@@ -40,7 +40,7 @@ function DashboardLayout() {
           </button>
           <div className="dashboard-layout__sprint">
             <div className="font-mono dashboard-layout__sprint-label">SPRINT DURUMU</div>
-            <div>Sprint 2 · 50 puan</div>
+            <div>Sprint 3 · 50 puan</div>
           </div>
         </div>
       </aside>

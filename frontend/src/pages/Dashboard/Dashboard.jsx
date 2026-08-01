@@ -5,7 +5,7 @@ import "./Dashboard.css";
 function Dashboard() {
   return (
     <div className="dashboard-page">
-      <div className="font-mono dashboard-page__eyebrow">SPRINT 2 · KULLANICI PANELİ</div>
+      <div className="font-mono dashboard-page__eyebrow">SPRINT 3 · KULLANICI PANELİ</div>
       <h1 className="font-display dashboard-page__title">MirrorAI Dashboard</h1>
       <p className="dashboard-page__desc">
         Avatar, gardırop ve AI destekli önerilerine tek panelden ulaş.

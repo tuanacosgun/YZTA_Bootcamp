@@ -5,10 +5,26 @@ import StatusTag from "../../components/StatusTag/StatusTag";
 import "./Home.css";
 
 const FEATURES = [
-  { title: "3D Dijital Avatar", desc: "Kullanıcı ölçülerine göre gerçekçi avatar oluşturma.", status: "arastirma" },
-  { title: "AI Virtual Try-On", desc: "E-ticaret linkindeki kıyafeti avatar üzerinde gösterme.", status: "arastirma" },
-  { title: "Dijital Gardırop", desc: "Kıyafetleri kategoriye göre kaydetme ve listeleme.", status: "devam" },
-  { title: "AI Kombin Motoru", desc: "Hava durumu ve etkinliğe göre kombin önerisi.", status: "arastirma" },
+  {
+    title: "3D Dijital Avatar",
+    desc: "Kullanıcı profil bilgilerine göre kişiselleştirilmiş avatar desteği.",
+    status: "HAZIR",
+  },
+  {
+    title: "AI Virtual Try-On",
+    desc: "Seçilen kıyafetin sanal prova deneyimi.",
+    status: "HAZIR",
+  },
+  {
+    title: "Dijital Gardırop",
+    desc: "Kıyafetleri kaydet, görüntüle ve AI ile kombin oluştur.",
+    status: "HAZIR",
+  },
+  {
+    title: "AI Kombin Motoru",
+    desc: "Yapay zekâ destekli kombin öneri sistemi.",
+    status: "HAZIR",
+  },
 ];
 
 const AUDIENCE = [
@@ -33,7 +49,7 @@ function Home() {
       <div className="home-page__hero">
         <div>
           <span className="tag" style={{ color: "var(--brass)" }}>
-            SPRINT 2 · MVP GELİŞTİRME AŞAMASI
+            SPRINT 3 · ÜRÜN TESLİM AŞAMASI
           </span>
           <h1 className="font-display home-page__title">
             Aynan artık senin
@@ -50,13 +66,13 @@ function Home() {
         </div>
         <div>
           <FittingMirror />
-          <div className="font-mono home-page__caption">KABİN AYNASI · AVATAR YER TUTUCU</div>
+          <div className="font-mono home-page__caption">KABİN AYNASI </div>
         </div>
       </div>
 
       <div className="stitch home-page__features">
         <div className="font-mono home-page__eyebrow">ÜRÜN ÖZELLİKLERİ</div>
-        <h2 className="font-display home-page__section-title">Sprint 2 kapsamındaki durum</h2>
+        <h2 className="font-display home-page__section-title">Sprint 3 kapsamındaki durum</h2>
         <div className="home-page__grid">
           {FEATURES.map((f) => (
             <div key={f.title} className="card home-page__feature-card">
