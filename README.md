@@ -372,17 +372,9 @@ Miro Board üzerinde:
 
 göstermektedir.
 
-### Sprint 3 Başlangıç Board'u
-
-![Sprint 3 Board - Başlangıç](BURAYA_SPRINT3_BASLANGIC_GORSEL_LINKI)
-
-### Sprint 3 Geliştirme Süreci Board'u
-
-![Sprint 3 Board - Geliştirme Süreci](BURAYA_SPRINT3_ORTA_GORSEL_LINKI)
-
-### Sprint 3 Son Durum Board'u
-
-![Sprint 3 Board - Son Durum](BURAYA_SPRINT3_SON_GORSEL_LINKI)
+- **Sprint board update**: Sprint board screenshotları: 
+![Kanban Pano](bootcamp_charts/sprint3_table.png)]
+![Burndown Chart](bootcamp_charts/sprint3_chart.png)]
 
 ---
 
