@@ -1,0 +1,10 @@
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0,<3.0
+pymysql>=1.1
+cryptography>=42.0
+pydantic>=2.6,<3.0
+python-multipart>=0.0.9
+pytest>=8.0
+httpx>=0.27
+python-dotenv>=1.0
