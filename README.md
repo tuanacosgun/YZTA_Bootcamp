@@ -450,47 +450,33 @@ Kullanıcı stil tercihini belirler
 
 ### Ana Sayfa
 
-![MirrorAI Ana Sayfa](BURAYA_ANA_SAYFA_GORSEL_LINKI)
+![MirrorAI Ana Sayfa](assets/screenshots/sprint-3/Image7.jpeg)
 
 **Açıklama:** Sprint 3 kapsamında güncellenen MirrorAI ana sayfası. Sayfada dijital gardırop ve kombin önerisi odaklı yeni MVP yapısı kullanıcıya sunulmaktadır.
 
 ### Dashboard
 
-![MirrorAI Dashboard](BURAYA_DASHBOARD_GORSEL_LINKI)
+![MirrorAI Dashboard](assets/screenshots/sprint-3/Image6.jpeg)
 
 **Açıklama:** Kullanıcının dijital gardırop ve AI Stylist modüllerine erişebildiği dashboard ekranı.
 
 ### Dijital Gardırop
 
-![Dijital Gardırop](BURAYA_GARDIROP_GORSEL_LINKI)
+![Dijital Gardırop](assets/screenshots/sprint-3/Image4.jpeg)
 
 **Açıklama:** Kullanıcının gardırobundaki örnek kıyafetleri görüntüleyebildiği, yeni ürün ekleyebildiği ve mevcut ürünleri kaldırabildiği dijital gardırop ekranı.
 
 ### Gardıroptan Ana Parça Seçimi
 
-![Ana Parça Seçimi](BURAYA_ANA_PARCA_SECIM_GORSEL_LINKI)
+![Ana Parça Seçimi](assets/screenshots/sprint-3/Image2.jpeg)
 
 **Açıklama:** Kullanıcının kombin oluşturmak istediği kıyafeti gardırobundan seçerek “Kombin Oluştur” işlemini başlattığı ekran.
 
 ### AI Stylist Ekranı
 
-![AI Stylist](BURAYA_AI_STYLIST_GORSEL_LINKI)
+![AI Stylist](assets/screenshots/sprint-3/Image1.jpeg)
 
 **Açıklama:** Gardıroptan seçilen ürünün AI Stylist ekranına aktarıldığı; ürün görseli, ürün adı, kategori, renk, etkinlik seçimi, stil seçimi ve alternatif görsel yükleme alanlarının bulunduğu ekran.
-
-### Alternatif Kıyafet Görseli Yükleme
-
-![Alternatif Görsel Yükleme](BURAYA_GORSEL_YUKLEME_EKRANI_LINKI)
-
-**Açıklama:** Kullanıcının gardırobunda bulunmayan bir kıyafetin görselini seçebildiği dosya yükleme alanı. Mevcut prototipte seçilen dosyanın adı kullanıcıya gösterilmektedir.
-
-### Kombin Sonucu
-
-![Kombin Sonucu](BURAYA_KOMBIN_SONUCU_GORSEL_LINKI)
-
-**Açıklama:** Kullanıcının seçtiği ana parça, etkinlik ve stil bilgileri doğrultusunda frontend üzerinde tanımlanan örnek verilerle gösterilen kombin sonucu.
-
-> Mevcut sürümde kombin sonucu gerçek bir yapay zekâ modeli veya backend servisi tarafından üretilmemektedir. Sonuç, kullanıcı akışını göstermek amacıyla frontend üzerinde tanımlanan mock verilerle oluşturulmaktadır.
 
 ---
 
